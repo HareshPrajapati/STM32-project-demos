@@ -54,7 +54,7 @@ Drivers/STM32L1xx_HAL_Driver/Src/%.o: ../Drivers/STM32L1xx_HAL_Driver/Src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L100xC -I"E:/STMprojects/blink/Inc" -I"E:/STMprojects/blink/Drivers/STM32L1xx_HAL_Driver/Inc" -I"E:/STMprojects/blink/Drivers/STM32L1xx_HAL_Driver/Inc/Legacy" -I"E:/STMprojects/blink/Drivers/CMSIS/Device/ST/STM32L1xx/Include" -I"E:/STMprojects/blink/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L100xC -I"E:/STMprojects/STM32-project-demos/blink/Inc" -I"E:/STMprojects/STM32-project-demos/blink/Drivers/STM32L1xx_HAL_Driver/Inc" -I"E:/STMprojects/STM32-project-demos/blink/Drivers/STM32L1xx_HAL_Driver/Inc/Legacy" -I"E:/STMprojects/STM32-project-demos/blink/Drivers/CMSIS/Device/ST/STM32L1xx/Include" -I"E:/STMprojects/STM32-project-demos/blink/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
